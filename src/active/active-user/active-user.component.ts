@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { User } from 'src/user';
 import { UserService } from 'src/user.service';
+import { DEACTIVATE } from 'src/config';
 
 @Component({
   selector: 'app-active-user',
@@ -10,7 +11,7 @@ import { UserService } from 'src/user.service';
 export class ActiveUserComponent {
 
   users: User[] = [];
-  btnName = "Deactivate";
+  btnName = DEACTIVATE;
   constructor(private userService: UserService) {
 
   }
